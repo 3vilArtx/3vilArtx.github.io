@@ -1,16 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
     padding: 20px;
-    background-color: #f4f4f4;
+    background: linear-gradient(to right, #84fab0, #8fd3f4);
     color: #333;
 }
 
 header {
     text-align: center;
     padding: 20px 0;
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.6);
     color: #fff;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .city-section {
@@ -20,24 +23,31 @@ header {
 h2 {
     border-bottom: 2px solid #ddd;
     padding-bottom: 10px;
+    font-weight: 500;
 }
 
 .attraction {
     display: flex;
     flex-wrap: wrap;
     margin-top: 20px;
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-color: #ffffffe6;  /* Slight transparency */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;  /* Animation effect on hover */
+}
+
+.attraction:hover {
+    transform: scale(1.03);  /* Slight zoom on hover */
 }
 
 .attraction img {
     max-width: 100%;
-    border-radius: 5px;
+    border-radius: 10px;
     order: 2;
     flex: 1;
     margin-right: 20px;
+    border: 3px solid #ddd;
 }
 
 .attraction-info {
@@ -52,6 +62,11 @@ h2 {
 .attraction-info a {
     color: #007BFF;
     text-decoration: none;
+    transition: color 0.2s;  /* Animation effect on hover */
+}
+
+.attraction-info a:hover {
+    color: #0056b3;  /* Darker blue on hover */
 }
 
 /* Media query for mobile */
