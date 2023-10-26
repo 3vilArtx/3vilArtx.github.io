@@ -1,29 +1,48 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 header {
     text-align: center;
     padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
 }
 
 .city-section {
-    margin-top: 30px;
+    margin-top: 40px;
+}
+
+h2 {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
 }
 
 .attraction {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 20px;
-    border: 1px solid #ddd;
+    background-color: #fff;
     padding: 10px;
     border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .attraction img {
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 100%;
+    border-radius: 5px;
+    order: 2;
+    flex: 1;
     margin-right: 20px;
+}
+
+.attraction-info {
+    flex: 2;
+    order: 1;
 }
 
 .attraction-info p {
@@ -31,6 +50,22 @@ header {
 }
 
 .attraction-info a {
-    color: blue;
-    text-decoration: underline;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+/* Media query for mobile */
+@media (max-width: 768px) {
+    .attraction {
+        flex-direction: column;
+    }
+
+    .attraction img {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    body {
+        padding: 10px;
+    }
 }
