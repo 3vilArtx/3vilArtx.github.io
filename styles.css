@@ -4,18 +4,18 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 20px;
-    background-color: #f8f9fa;
-    color: #333;
+    background-color: #E8F3FE;  /* Lightest color from the palette for background */
+    color: #0F3375;  /* Darkest color from the palette for primary text */
 }
 
 header {
     text-align: center;
     padding: 30px 0;
-    background-color: #2c2c2c;
-    color: #f8f9fa;
+    background-color: #0F3375;  /* Darkest color from the palette */
+    color: #CCE4FD;  /* Light color for contrast */
     border-radius: 15px;
     font-family: 'Montserrat', sans-serif;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 25px rgba(15, 51, 117, 0.1);
 }
 
 .city-section {
@@ -24,35 +24,34 @@ header {
 
 h2 {
     font-weight: 700;
-    border-bottom: 3px solid #555;
+    border-bottom: 3px solid #13459C;  /* A slightly lighter shade for contrast */
     padding-bottom: 10px;
     margin-top: 40px;
     font-family: 'Montserrat', sans-serif;
 }
 
 .attraction {
-    background-color: #ffffff;
+    background-color: #E8F3FE;  /* Background color matching the body */
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 20px rgba(15, 51, 117, 0.1);
     transition: box-shadow 0.3s, transform 0.3s;
     display: flex;
     margin-top: 20px;
     flex-wrap: wrap;
+    align-items: center;  /* Vertically center content */
 }
 
 .attraction:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 10px 30px rgba(15, 51, 117, 0.15);
 }
 
 .attraction img {
-    max-width: 100%;
+    max-width: 60%;  /* Larger width for emphasis */
     border-radius: 15px;
-    order: 2;
     flex: 1;
     margin-right: 20px;
-    border: 3px solid #ddd;
     transition: transform 0.3s;  
 }
 
@@ -61,23 +60,24 @@ h2 {
 }
 
 .attraction-info {
-    flex: 2;
-    order: 1;
+    flex: 1;
+    max-width: 40%;  /* Limiting width so image gets more space */
 }
 
 .attraction-info p {
     margin: 10px 0;
+    color: #0F3375;  /* Darkest color for text */
 }
 
 .attraction-info a {
-    color: #007BFF;
+    color: #196BDE;  /* Brighter color for links */
     text-decoration: none;
     transition: color 0.3s;
     font-weight: 500;
 }
 
 .attraction-info a:hover {
-    color: #0056b3;
+    color: #1557C0;  /* Slightly darker color on hover */
 }
 
 /* Media query for mobile */
@@ -89,6 +89,7 @@ h2 {
     .attraction img {
         margin: 0;
         margin-bottom: 20px;
+        max-width: 100%;
     }
 
     body {
